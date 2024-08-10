@@ -7,7 +7,7 @@ fn main() {
     let mut max_ones = 0;
     let mut rng = rand::thread_rng();
 
-    while numbers[0] < 177 && rolls < 1_000_000_000 {
+    while numbers[0] < 177 && rolls < 1_000_000 {
         numbers = [0, 0, 0, 0];
         for _ in 0..231 {
             let roll = items[rng.gen_range(0..items.len())];
